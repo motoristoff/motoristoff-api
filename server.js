@@ -27,7 +27,6 @@ transporter.verify((error, success) => {
   }
 });
 
-
 app.post('/api/send-order', async (req, res) => {
   const { orderId, customerName, customerPhone, customerEmail, customerAddress, orderHtml, totalPrice } = req.body;
 
