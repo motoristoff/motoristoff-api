@@ -10,6 +10,7 @@ app.use(cors({
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
+app.use(express.json());
 
 
 const transporter = nodemailer.createTransport({
